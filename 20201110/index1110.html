@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>20201110</title>
+        <!-- style CSS 스타일을 먹여서 내가 원하는 레이아웃과 화면을 구축할 수 있다 -->
+        <style>
+            :root {
+                /*스타일에서 사용할 변수들 선언(CSS)*/
+                --color-login-form-background: #f6f8fa;
+                --color-login-btn: #2c974b;
+                --color-login-btn-hover: #2ebc4f;
+            }
+
+            .login-form {
+                background-color: var(--color-login-form-background);
+                width : 310px;
+                height : 228px;
+                margin : 16px 0 0;
+                border : 1px solid #eaecef;
+                border-radius: 5px;
+                padding : 20px;
+                box-sizing: border-box;
+            }
+
+            label {
+                font-size: 14px;
+                font-weight : 600;
+            }
+            
+            .basic-input {
+                margin-top: 10px;
+                box-sizing: border-box;
+                width: 100%;
+                border: 1px solid #eaecef;
+                border-radius: 3px;
+                height: 32px;
+            }
+
+            .basic-input-submit {
+                margin-top: 20px;
+                background-color: var(--color-login-btn);
+                text-decoration : none;
+                width : 100%;
+                height : 32px;
+                color : #ffffff;
+                border : 0;
+                border-radius: 3px;
+            }
+            
+            .basic-input-submit:hover {
+                background-color: var(--color-login-btn-hover);
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <!-- body html 문서구조만을 표현함-->
+    <body>
+        <form method="POST" action="/login" name="user-login" class="login-form">
+            <label>Username or email address</label>
+            <input name="username" type="text" class="basic-input"/>
+            <label>Password</label>
+            <input type="password" class="basic-input"/>
+            <input type="submit" value="Sing In" class="basic-input-submit"/>
+        </form>
+    </body>
+</html>

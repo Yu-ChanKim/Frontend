@@ -190,6 +190,28 @@ height - 높이
 
 <a href="링크">링크이름</a>
 
+속성
+
 - href : 주소
 - target : 링크가 표시될 방법
 - download : 링크의 리소스를 다운로드
+
+target 속성
+- _blank
+- self: 기본 값
+
+사이트확인
+http://127.0.0.1:5500/20201109/index.html
+
+
+html/css 바로 돌리면서 확인해보는 사이트
+
+https://liveweave.com/
+https://htmledit.squarefree.com/
+
+
+랜덤 글씨 뽑을 수 있는 사이트
+https://lipsum.com/
+
+html 코드 사용법 설명 블로그
+https://aboooks.tistory.com/258

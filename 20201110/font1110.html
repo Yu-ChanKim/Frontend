@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>폰트 관련 스타일 정리</title>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@300&display=swap" rel="stylesheet">
+        <style>
+            *{
+                font-family: 'Big Shoulders Inline Text', cursive;
+            }
+
+            .p1{
+                font-size: 30px; /*px,rem,ream?*/
+                font-weight: 900; /*bolder,ligther,300...*/
+                color: #0000ff; /*R - G - B 순서로 색의 강도 조절 가능*/
+                text-decoration: underline overline line-through;
+                text-transform: capitalize; /*uppercase, lowercase, full-width*/
+                white-space: nowrap; /*연속 공백을 하나로 합쳐 줄바꿈 안일어나고 그대로 쭉*/
+                letter-spacing: 15px; /*글자 간 공백*/
+                word-spacing: 100px; /*단어 간 공백*/
+                direction: rtl; /*텍스트 방향*/
+                text-align: center; /*텍스트 정렬*/
+                text-indent: 1.5rem; /*들여쓰기*/
+                line-height: 20px;/*한 줄 라인이 차지하는 높이 조정*/
+
+            }
+
+            h1 {
+                text-shadow: 5px 5px 3px #999999; /*X축, Y축, 그림자번짐정도, 색깔*/
+            }
+            
+            div{
+                background-color: aqua;
+
+            }
+
+            li{
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>1번째</li>
+            <li>2번째</li>
+        </ul>
+        <div>
+            dlfodjkj kd ipsum doleor dit same, djfijdo
+        </div>
+        <h1>Live Server</h1>
+        <p>djkdfjdlkjflkdsajfkladsjflkadjslfkasdjkl</p>
+        <p>허ㅏㅣㄹ어ㅏㅇㄴ미러ㅏㅣㄴㅇ말한글한글</p>
+        <p>djkdfjdlkjflkdsajfkladsjflkadjslfkasdjkl</p>
+        <p>djkdfjdlkjflkdsajfkladsjflkadjslfkasdjkl</p>
+        <p class="p1">djkdfjdlkjflkdsajfkladsjflkadjslfkasdjkl</p>
+    </body>
+</html>
