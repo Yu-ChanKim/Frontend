@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>20201111_14 실습</title>
+        <style>
+            html, body {
+                padding: 0;
+                margin: 0;
+            }
+
+            .flex-container{
+                display: flex;
+                flex-direction: column-reverse;
+                flex-wrap: wrap-reverse;
+                width: 100%;
+                height: 100vh; /*vh - view point height 뷰포트높이 화면상 보이는 범위에서 상대적 높이*/
+                background-color: #127cc1;
+            }
+            .flex-item {
+                width: 100px;
+                height: 100px;
+                box-sizing: border-box;
+                border: 1px solid black;
+                align-content: center;
+            }
+            .item1{
+                background-color: #d0d0d0;
+                flex-grow: 1; /*커지는 비율에 대하여*/
+                flex-shrink: 3; /*줄어드는 비율에 대하여*/
+                flex-basis: 200px;
+                order: 4; /*flex item 배치 순서를 임의로 조정 가능*/
+            }
+            .item2{
+                background-color: #d023d0d0;
+                flex-grow: 2;
+                flex-shrink: 1;
+                order: 3;
+            }
+            .item3{
+                background-color: #ca6aff;
+                flex-grow: 3;
+                flex-shrink: 1;
+                order: 2;
+            }
+            .item4{
+                background-image: url(https://ww.namu.la/s/71e7a6fd2595791397eac33b512d08ed720914828604aabba6cb8dd9d3678311f5d367b6d8b54338b681849dcb4205514f046096f5922f2dd34d2aa85333aba1a5b6ff0c747d004364c5a40a5f7dfa1e640ea98b6b11b047786be671519dfe52);
+                background-repeat: no-repeat;
+                background-size:cover ;
+                background-color: #4ab141;
+                flex-grow: 1;
+                flex-shrink: 1;
+                order: 1;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="flex-container"> <!--flex container-->
+          <!--flex item-->
+          <div class="flex-item item1">1</div>
+          <div class="flex-item item2">2</div>
+          <div class="flex-item item3">3</div>
+          <div class="flex-item item4">4</div>
+        </div>
+     
+    </body>
+</html>

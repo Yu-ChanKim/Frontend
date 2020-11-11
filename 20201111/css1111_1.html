@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>20201111_1 html 실습</title>
+        <style>
+            li{
+                list-style-type: disc; /*square은 네모박스, none*/
+                list-style-type: lower-roman; /*ol은 순서있는 목록 여기에 로마자 등 숫자 표기 변경가능*/
+
+
+
+            }
+            li::before{
+                content : "아아아아" ;   /*가상선택자 */
+                /*이모지(이모티콘) 윈도우키 + 세미클론 누르면 윈도우10부터는 이모티콘 가능*/
+            }
+        </style>
+    </head>
+    <body>
+        <ul>  <!--F2 키 누르고 변경하면 같이 세트로 한꺼번에 변경 가능-->
+            <li>0000</li>
+            <li>0000</li>
+            <li>0000</li>
+            <li>0000</li>
+       </ul>
+    </body>
+</html>

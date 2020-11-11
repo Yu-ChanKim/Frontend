@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>20201111_13 실습</title>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+            }
+            .container{
+                width: 100%;
+                height: 100%;
+               position: relative;
+               background-color: grey;
+               overflow: hidden;
+            }
+            
+            .box{
+                top: 50px;
+                left: 50px;
+                width: 100px;
+                height: 100px;
+            }
+            .box1{
+                position: static;
+                top: 50px;
+                left: 510px;
+                background-color: red;
+                float: right;
+            }
+
+            .box2{
+                position: absolute;
+                top:50px;
+                left:250px;
+                background-color: blue;
+                
+            }
+            .box3{
+                position: fixed;
+                top:50px;
+                left:50px;
+                background-color: black;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="box box3"></div>
+            <div class="box box2"></div>
+            <div class="box box1"></div>
+        </div>
+     
+    </body>
+</html>
