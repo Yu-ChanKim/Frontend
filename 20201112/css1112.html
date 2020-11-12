@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>20201112 실습</title>
+    </head>
+    <body>
+        <button id="btn-alert">click</button>
+        <script>
+        var btn = document.getElementById('btn-alert');
+        console.log(btn);
+
+        btn.addEventListener('click', onClickHandler);
+        function onClickHandler() {
+            alert('마우스 클릭!!');
+        }
+      </script>
+    </body>
+</html>
