@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>flex container review</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .flex-container {
+            display: flex;
+            width: 100vw;
+            height: 300px;
+            background-color: beige;
+            justify-content: space-between;
+        }
+        .flex-item {
+            flex: 1 1 0;
+            padding: 20px;
+        }
+        .flex-item > h1, p {
+            margin: 0;
+
+        }
+        .flex-item > h1 {
+            margin-bottom: 1rem;
+        }
+        .c1{background-color: cornflowerblue;}
+        .c2{background-color: coral;}
+        .c3{background-color: powderblue;}
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item c1">
+            <h1>Learn more.</h1>
+            <p>Sit amet nulla facilisi morbi tempus. Nulla facilisi cras fermentum odio eu. Etiam erat velit scelerisque in dictum non consectetur a erat. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Ut sem nulla pharetra diam. Fames ac turpis egestas maecenas. Bibendum neque egestas congue quisque egestas diam. Laoreet id donec ultrices tincidunt arcu non sodales neque. Eget felis eget nunc lobortis mattis aliquam faucibus purus. Faucibus interdum posuere lorem ipsum dolor sit.</p>
+        </div>
+        <div class="flex-item c2">item2</div>
+        <div class="flex-item c3">item3</div>
+    </div>
+</body>
+</html>

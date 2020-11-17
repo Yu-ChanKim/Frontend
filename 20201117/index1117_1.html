@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Query_1</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .header {
+                background-color: cornflowerblue;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .left-sidebar {
+                overflow: auto;
+                background-color: gray;
+                width: 20%;
+                float: left;
+            }
+
+            .menu {
+                text-align: center;
+
+            }
+            .menu > a {
+                background-color: darkseagreen;
+                padding: 8px;
+                margin-top: 7px;
+                display: block;
+                width: 100%;
+                color: whitesmoke;
+            }
+            
+            .main {
+                background-color: tomato;
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+                text-align: center;
+                
+            }
+            .right-sidebar{
+                background-color: yellow;
+                float: left;
+                width: 20%;
+                padding: 20px;
+                margin-top: 7px;
+                text-align: center;
+            }
+
+            @media (max-width: 600px) {
+                .left-sidebar, .main, .right-sidebar {
+                    width: 100%;
+                }
+            }
+          
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Hello Header</h1>
+        </div>
+
+        <div class="left-sidebar">
+            <div class="menu">
+                <a href="">link1</a>
+                <a href="">link2</a>
+                <a href="">link3</a>
+                <a href="">link4</a>
+            </div>
+        </div>
+
+        <div class="main">
+            <h1>본문</h1>
+            <p>무언가심각한글</p>
+        </div>
+
+        <div class="right-sidebar">
+            <h2>오른쪽에 떠있는 친구</h2>
+            <p>둥둥</p>
+        </div>
+    </body>
+</html>
